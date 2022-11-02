@@ -51,8 +51,9 @@ class BottomNavStyle2 extends StatelessWidget {
                                             item.activeColorPrimary)
                                         : item.inactiveColorPrimary))
                                 : TextStyle(
-                                    color: item.activeColorSecondary ??
-                                        item.activeColorPrimary,
+                                    color: isSelected
+                                        ? item.activeColorPrimary
+                                        : item.inactiveColorSecondary,
                                     fontWeight: FontWeight.w400,
                                     fontSize: 12),
                           )),
