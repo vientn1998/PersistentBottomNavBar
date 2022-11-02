@@ -43,7 +43,7 @@ class BottomNavStyle2 extends StatelessWidget {
                           type: MaterialType.transparency,
                           child: FittedBox(
                               child: Text(
-                            isSelected ? item.title! : " ",
+                            item.title!,
                             style: item.textStyle != null
                                 ? (item.textStyle!.apply(
                                     color: isSelected
